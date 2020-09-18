@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Fonts link -->
+  <!-- plugin link -->
+  
+  
+  <!-- CSS Links-->
+ 
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>JQ  Plugin Practice</title>
+   <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a0d2968dea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <h1 class="bg-light text-center p-2">JS Plugin- MixitUp</h1>
+ 
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="mix-btn">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter=".w-design">Web Design</button>
+        <button type="button" data-filter=".w-dev">Web Development</button>
+        <button type="button" data-filter=".photo">Photography</button>
+      </div>
+    </div>
+    <div class="row mix-cont">
+      <div class="mix w-dev col-md-4">
+        <img class="img-fluid" src="images/gallery1.jpg">
+      </div>
+      <div class="mix w-design photo col-md-4">
+        <img class="img-fluid" src="images/gallery2.jpg">
+      </div>
+      <div class="mix photo col-md-4">
+        <img class="img-fluid" src="images/gallery3.jpg">
+      </div>
+      <div class="mix w-design w-dev col-md-4">
+        <img class="img-fluid" src="images/gallery4.jpg">
+      </div>
+      <div class="mix w-dev photo col-md-4">
+        <img class="img-fluid" src="images/gallery5.jpg">
+      </div>
+      <div class="mix w-design w-dev col-md-4">
+        <img class="img-fluid" src="images/gallery6.jpg">
+      </div>
+    </div>
+  </div>
+ 
+</section>
+
+
+ 
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS, lastly Custom js-->
+<script src="js/jquery-1.12.4.min.js"></script>
+<!-- plugins -->
+<script src="vendor/js/mixitup.min.js"></script>
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+<script type="text/javascript">
+  
+</script>
+<script>
+ 
+ var cont = document.querySelector('.mix-cont');
+ var mixer = mixitup(cont);
+</script>
+</body>
+
+</html>
